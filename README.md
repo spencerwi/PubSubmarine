@@ -27,7 +27,7 @@ public class YourClass {
     
     public void subscribe(){
         eventBus.register(SomeTypeOfEvent.class, (Event event) -> {
-            SomeTypeOfEvent specificEventType = (SomeTypeOfEvent)event
+            SomeTypeOfEvent specificEventType = (SomeTypeOfEvent)event;
             System.out.println("Got: " + specificEventType.value);
         });
     }
